@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<style>
+    ::-webkit-scrollbar {
+      /*滚动条整体样式*/
+      width : 10px; /*高宽分别对应横竖滚动条的尺寸*/
+      height: 1px;
+    }
+    ::-webkit-scrollbar-thumb {
+      /*滚动条里面小方块*/
+      border-radius : 10px;
+      background-color: skyblue;
+      background-image: -webkit-linear-gradient(
+          45deg,
+          rgba(255, 255, 255, 0.2) 25%,
+          transparent 25%,
+          transparent 50%,
+          rgba(255, 255, 255, 0.2) 50%,
+          rgba(255, 255, 255, 0.2) 75%,
+          transparent 75%,
+          transparent
+      );
+    }
+    ::-webkit-scrollbar-track {
+      /*滚动条里面轨道*/
+      box-shadow : inset 0 0 5px rgba(0, 0, 0, 0.2);
+      background : #ededed;
+      border-radius: 10px;
+    }
+    .movie-page {
+        margin: 0 auto;
+    }
+
+    .movie-title {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    #movie-background {
+        width: 100%;
+        height: 550px;
+        background-image: url("image/th.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .movie-theme {
+        font-size: 30px;
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .movie-intro {
+        font-size: 20px;
+        text-align: left;
+        margin-left: 20px;
+        text-indent:2em;
+    }
+</style>
+
+    <head>
+        <meta charset="utf-8">
+        <title>电影介绍</title>
+    </head>
+
+
+    <body class="movie-page">
+        <h1 class="movie-title">电影标题</h1>
+        <div id="movie-background"></div>
+
+        <h2 class="movie-theme">电影简介</h2>
+        <p class="movie-intro"></p>
+        <img src="image/th.jpg" alt="电影海报">
+        <table>
+            <tr>
+                <td>导演</td>
+                <td>主演</td>
+                <td>类型</td>
+            </tr>
+            <tr>
+                <td>导演姓名</td>
+                <td>主演姓名</td>
+                <td>类型名称</td>
+            </tr>
+            <tr>
+                <td>导演姓名</td>
+                <td>主演姓名</td>
+                <td>类型名称</td>
+            </tr>
+            <tr>
+                <td>导演姓名</td>
+                <td>主演姓名</td>
+                <td>类型名称</td>
+            </tr>
+        </table>
+    </body>
+</html>
