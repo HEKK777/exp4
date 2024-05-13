@@ -2,12 +2,11 @@
 <html lang="zh-cmn-Hans">
 <style>
     ::-webkit-scrollbar {
-      /*滚动条整体样式*/
-      width : 10px; /*高宽分别对应横竖滚动条的尺寸*/
+      width : 10px;
       height: 1px;
     }
+
     ::-webkit-scrollbar-thumb {
-      /*滚动条里面小方块*/
       border-radius : 10px;
       background-color: skyblue;
       background-image: -webkit-linear-gradient(
@@ -21,12 +20,13 @@
           transparent
       );
     }
+
     ::-webkit-scrollbar-track {
-      /*滚动条里面轨道*/
       box-shadow : inset 0 0 5px rgba(0, 0, 0, 0.2);
       background : #ededed;
       border-radius: 10px;
     }
+
     .movie-page {
         margin: 0 auto;
     }
@@ -36,12 +36,10 @@
         text-align: center;
     }
 
-    #movie-background {
+    .movie-background {
         width: 100%;
-        height: 550px;
-        background-image: url("image/th.jpg");
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
+        height: 100%;
+        margin: 0 auto;
     }
 
     .movie-theme {
@@ -54,44 +52,104 @@
         font-size: 20px;
         text-align: left;
         margin-left: 20px;
+        line-height: 2em;
         text-indent:2em;
+    }
+
+    .movie-link {
+        font-size: 30px;
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    table {
+        border: none;
+        border-collapse: collapse;
+        margin: 20px;
+        font-size: 20px;
+    }
+
+    tr {
+        margin-top:80px;
+        margin-bottom:80px;
+    }
+    td {
+        padding-left: 20px;
+    }
+
+    .content {
+        line-height: 2em;
+        text-indent:2em;
+        width: 1000px;
+        font-size: 18px;
+    }
+
+    .name {
+        text-align: left;
+        width: 200px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .actor_name {
+        text-align: left;
+        width: 200px;
+        font-size: 15px;
     }
 </style>
 
-    <head>
-        <meta charset="utf-8">
-        <title>电影介绍</title>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <title>电影介绍</title>
+</head>
 
+<body class="movie-page">
+<h1 class="movie-title">花束般的恋爱</h1>
+<img class="movie-background" alt="电影海报" src="image/poster.jpg">
 
-    <body class="movie-page">
-        <h1 class="movie-title">电影标题</h1>
-        <div id="movie-background"></div>
+<h2 class="movie-theme">剧情简介</h2>
+<p class="movie-intro">在东京京王线的明大前站，错过末班车的山音麦（菅田将晖 饰）和八谷绢（有村架纯
+    饰）偶然相识。两人都不擅长和人打交道，却在深夜咖啡馆聊起文学、电影和音乐，结果发现两人喜好惊人一致，就此互生好感，相处一段时间后确立恋人关系。随后两人开始了五年恋爱、同居、打工和找工作的生活。大学毕业后一边做自由职业者一边开始同居生活的他们，给捡回家的小猫取了名字，无论是经历了涉谷PARCO停业，还是综艺《SMAP×SMAP》迎来最终回，两人的生活目标都是将日常维持现状。然而，山音麦在现实面前不得不开始选择就职，进入公司终日忙碌，曾经的共同爱好和追求在现实的磋磨下逐渐出现裂缝，他们的爱情也呈现出迷茫前行的姿态</p>
 
-        <h2 class="movie-theme">电影简介</h2>
-        <p class="movie-intro"></p>
-        <img src="image/th.jpg" alt="电影海报">
-        <table>
-            <tr>
-                <td>导演</td>
-                <td>主演</td>
-                <td>类型</td>
-            </tr>
-            <tr>
-                <td>导演姓名</td>
-                <td>主演姓名</td>
-                <td>类型名称</td>
-            </tr>
-            <tr>
-                <td>导演姓名</td>
-                <td>主演姓名</td>
-                <td>类型名称</td>
-            </tr>
-            <tr>
-                <td>导演姓名</td>
-                <td>主演姓名</td>
-                <td>类型名称</td>
-            </tr>
-        </table>
-    </body>
+<h2 class="movie-theme">主要演员表</h2>
+<table>
+    <tr>
+        <td rowspan="3"><img src="image/actor1.jpg" alt="" height=270 width=202.5/></td>
+        <td class="name">山音麦</td>
+    </tr>
+    <tr>
+        <td class="actor_name">演员:菅田将晖</td>
+    </tr>
+    <tr>
+        <td class="content">
+            最初是个不善与人交际的大学生，梦想成为插画家，和女主八谷绢有很多共同爱好，由此和她一起度过了美好的5年时光。毕业之后，父亲不赞同他留在东京当插画师，便断了他的经济支持。在生活压力下，他进入公司成为一个终日忙碌的小职员，努力工作打拼，爱好和价值观悄然转变，最终和恋人渐行渐远。
+        </td>
+    </tr>
+    <tr>
+        <td rowspan="3"><img src="image/actor2.jpg" alt="" height=270 width=202.5/></td>
+        <td class="name">八谷绢</td>
+    </tr>
+    <tr>
+        <td class="actor_name">演员:有村架纯</td>
+    </tr>
+    <tr>
+        <td class="content">
+            喜欢独来独往，爱好小众的文艺女大学生。因错过末班车偶然与山音麦相识，两人拥有诸多共同爱好，因此成为恋人。她出身中产，虽然对于家里的生活方式、父母的观念深感厌倦，但这样的家庭给予了她做选择的底气，让她在生活的磋磨下仍旧能够保留自己的文艺情调和浪漫幻想。也正是这份文艺和浪漫，令她和山音麦的关系无法延续。
+        </td>
+    </tr>
+</table>
+<h2 class="movie-theme">影片截图</h2>
+<img src="image/screenshot1.jpg" alt="" height=180 width=180 style="margin-left: 20px;"/>
+<img src="image/screenshot2.jpg" alt="" height=180 width=180 style="margin-left: 20px;"/>
+<img src="image/screenshot3.jpg" alt="" height=180 width=180 style="margin-left: 20px;"/>
+<img src="image/screenshot4.jpg" alt="" height=180 width=180 style="margin-left: 20px;"/>
+<img src="image/screenshot5.jpg" alt="" height=180 width=180 style="margin-left: 20px;"/>
+<img src="image/screenshot6.jpg" alt="" height=180 width=180 style="margin-left: 20px;"/>
+<img src="image/screenshot7.jpg" alt="" height=180 width=180 style="margin-left: 20px;"/>
+<img src="image/screenshot8.jpg" alt="" height=180 width=180 style="margin-left: 20px;"/>
+<img src="image/screenshot9.jpg" alt="" height=180 width=180 style="margin-left: 20px;"/>
+
+<h2 class="movie-theme">豆瓣影片</h2>
+<a class="movie-link" href="https://movie.douban.com/subject/34874432/" target="_blank">豆瓣链接</a>
+</body>
 </html>
